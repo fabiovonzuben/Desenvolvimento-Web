@@ -1,0 +1,22 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "Primeiro",
+  "main": "funcionario.js",
+  "scripts": {
+    "start": "nodemon",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "primeiro",
+    "text",
+    "curso",
+    "coder"
+  ],
+  "author": "Fabio Von",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.20.0"
+  }
+}
