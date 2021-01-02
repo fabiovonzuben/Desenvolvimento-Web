@@ -2,16 +2,18 @@
 
 <ul class="tree">
     <li>
-        Backend
+       <span pasta-ts>Backend</span>
         <ul>
-            <li>app
+            <li>
+                <span pasta-ts>App</span>
                 <ul>
                     <li>produto.js</li>
                     <li>usuário.js</li>
                     <li>venda.js</li>
                 </ul>
             </li>
-            <li>config
+            <li>
+                <span pasta-ts>Config</span>
                 <ul>
                     <li>banco.js</li>
                     <li>rotas.js</li>
@@ -21,10 +23,10 @@
         </ul>
     </li>
     <li>
-        Frontend
+        <span pasta-ts>Frontend</span>
         <ul>
             <li>
-                Public
+                <span pasta-ts>Public</span>
                 <ul>
                     <li>app.css</li>
                     <li>app.js</li>
@@ -36,3 +38,13 @@
 </ul>
 
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+<script>
+    document.querySelectorAll('[pasta-ts]').forEach(folder =>{
+        folder.onclick = function(e){
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+    })
+</script>
